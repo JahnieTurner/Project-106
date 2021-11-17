@@ -1,6 +1,6 @@
-function start() {
+function Start() {
     navigator.mediaDevices.getUserMedia({ audio: true })
-    classifier = ml5.sound.Classifier('https://teachablemachine.withgoogle.com/models/4uNbEcWQq/model.json', modelLoaded)
+    classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/4uNbEcWQq/model.json', modelLoaded)
 }
 
 function modelLoaded() {
